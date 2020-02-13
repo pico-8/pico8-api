@@ -418,7 +418,7 @@ pico8_buttons[] // bitfields for player input</code></pre>
 
           <h6>private functions (use carefully)</h6>
           <pre><code class="lua">_get_frames_skipped() -- used automatically by _mainloop()
-_get_menu_item_selected(n) -- returns true or false if the n-th menu item is selected; n in [1..5]; used automatically by _mainloop()
+_get_menu_item_selected(n) -- returns true or false if the n-th menu item is selected (n in [1..5]), nil for invalid n; used automatically by _mainloop()
 _mainloop() -- main pico-8's "while true"
 _pausemenu[n].callback() -- execute the n-th menu item's callback; n in [1..5]; used automatically by _mainloop()
 _set_mainloop_exists(n) -- ?
